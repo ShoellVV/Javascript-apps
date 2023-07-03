@@ -1,4 +1,3 @@
-// dodać liczenie na enter
 // obiekt kalkulatora
 let calculator ={
 
@@ -14,11 +13,19 @@ let calculator ={
             let el = this.buttons[i];
             el.addEventListener("click",this.buttonClick); //event click uruchamia funcje buttonClick
         }
+
+        // wykonanie działania na wciśniety enter przy focusie inputa
+        this.input.addEventListener("keydown", event =>{
+
+            if(event.code === "Enter"){
+                this.evaluate();
+            };
+        });
     },
 
     buttonClick: function(event) { //funkcja która ze zmienna event
         let divHtmlText = event.target.innerHTML; // przypisanie do zmiennej tekstu z pliku html z wciśniętego buttona 
-        console.log("Klik: " + divHtmlText);    //test w konsoli czy kod z linijki wyżej działa
+        // console.log("Klik: " + divHtmlText);    //test w konsoli czy kod z linijki wyżej działa
 
         switch(divHtmlText) {  //switch, który pobiera zmienną magazynująca tekst przycisku z pliku html i uruchamia funckje dla odpowiednich przycisków
             case "=":
