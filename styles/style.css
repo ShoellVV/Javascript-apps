@@ -8,7 +8,7 @@
 body{
     margin:0;
     background-image: url("../images/blob-scene-haikei.svg");
-    background-size: 100%;
+    background-size: cover;
 }
 
 ul {
@@ -81,17 +81,21 @@ a{
 }
 
 /*border */
+#home .row:nth-child(2){
+    flex-wrap: nowrap;
+}
+
 .border-1{
-    display:flex;
-    flex-basis:11%;
+    min-width: 160px;
+    height: 1.25rem;
 }
 
 .border-2{
-    display:flex;
-    flex-basis: 89%;
+    width: 89%;
     border-bottom: solid 1px white;
     height: 1.25rem;
 }
+
 /* main */
 
 main{
