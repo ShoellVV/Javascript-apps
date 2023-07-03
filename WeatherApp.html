@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kamil Ejsmont">
+    <meta name="keywords" content="javascript, aplikacje, pogoda, sprawdź pogodę">
+    <meta name="descriptions" content="Strona z aplikacją pogody">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/WeatherApp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Aplikacja pogody</title>
+</head>
+<body>
+<!--header start-->
+   <header id="home">
+            <!--row jeden start-->
+            <div class="row">
+                <!--logo start-->
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <!--logo koniec-->
+                <!--navbar start-->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="Website.html">Strona główna</a></li>
+                        <li><a href="#Footer">Kontakt</a></li>
+                        <li><a href="../Portfolio.html">Portfolio</a></li>
+                    </ul>
+                </nav>
+                <!--navbar koniec-->
+                <div></div>
+            </div>
+            <!--row jeden koniec-->
+            <div class="row">
+                <div class="border-1"></div> 
+                <div class="border-2"></div>
+            </div>
+                
+            
+   </header>
+<!--header koniec-->
+<!--main start-->
+    <main>
+        <!--aside start-->
+        <aside id="aside-menu">
+            <!--col jeden start-->
+            <div class="col">
+                <button class="tab-button"><a href="Calculator.html">Kalkulator</a></button>
+                <button class="tab-button"><a href="Tic-tac-Toe.html">Tic-Tac-Toe</a></button>
+                <button class="tab-button"><a href="Snake.html">Snake</a></button>
+                <button class="tab-button"><a href="ToDo.html">Lista ToDo</a></button>
+                <button class="tab-button active"><a href="WeatherApp.html">Aplikacja pogody</a></button>
+            </div>
+            <!--col jeden koniec-->
+        </aside>
+        <!--aside koniec-->
+
+        <!--sekcja content start-->
+        <section class="content">
+            <!--aplikacja pogody start-->
+            <div id="weather" class="tab-content wrapper">
+                <h1 class="bg-dark">Aplikacja pogody</h1>
+                <div class="weather-container">
+                    <!--input miasta start-->
+                    <div class="row input-container">
+                        <form class="weather-form">
+                            <div class="group">
+                                <input required="" type="text" class="weather-input">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Wpisz miasto</label>
+                                <input type="submit" class="search-btn" value="Szukaj">
+                            </div>
+                            <div class="info-msg"></div>
+                        </form>
+                    </div>
+                    <!--input miasta koniec-->
+                    <!--cards miast start-->
+                    <div id="card-container" class="row">
+
+                    </div>
+                    <!--cards miast koniec-->
+                </div>
+            </div>
+            <!--aplikacja pogody koniec-->
+        </section> 
+        <!--sekcja kontent koniec--> 
+    </main>
+<!--main koniec-->
+<!--footer start-->
+    <footer id="Footer">
+
+    </footer>
+<!--footer koniec-->
+
+<script src ="scripts/WeatherApp/Weather.js" type="module"></script>
+    
+</body>
+</html>

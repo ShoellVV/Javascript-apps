@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kamil Ejsmont">
+    <meta name="keywords" content="javascript, aplikacje,gry,snake">
+    <meta name="descriptions" content="Gra Snake">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/game-two.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Snaje</title>
+</head>
+<body>
+<!--header start-->
+   <header id="home">
+            <!--row jeden start-->
+            <div class="row">
+                <!--logo start-->
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <!--logo koniec-->
+                <!--navbar start-->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="Website.html">Strona główna</a></li>
+                        <li><a href="#Footer">Kontakt</a></li>
+                        <li><a href="../Portfolio.html">Portfolio</a></li>
+                    </ul>
+                </nav>
+                <!--navbar koniec-->
+                <div></div>
+            </div>
+            <!--row jeden koniec-->
+            <div class="row">
+                <div class="border-1"></div> 
+                <div class="border-2"></div>
+            </div>
+                
+            
+   </header>
+<!--header koniec-->
+<!--main start-->
+    <main>
+        <!--aside start-->
+        <aside id="aside-menu">
+            <!--col jeden start-->
+            <div class="col">
+                <button class="tab-button"><a href="Calculator.html">Kalkulator</a></button>
+                <button class="tab-button"><a href="Tic-tac-Toe.html">Tic-Tac-Toe</a></button>
+                <button class="tab-button active"><a href="Snake.html">Snake</a></button>
+                <button class="tab-button"><a href="ToDo.html">Lista ToDo</a></button>
+                <button class="tab-button"><a href="WeatherApp.html">Aplikacja pogody</a></button>
+            </div>
+            <!--col jeden koniec-->
+        </aside>
+        <!--aside koniec-->
+
+        <!--sekcja content start-->
+        <section class="content">
+            <!--snake start-->
+            <div id="gameTwo" class="wrapper">
+                <h1 class="bg-dark">Gra snake</h1>
+                <!--snake container start-->
+                <div id="snakeBoard" class="snake-container">
+                </div>
+                <div id="snakePopUp">
+                    <h1>Koniec gry</h1>
+                    <h3 id="points"></h3>
+                    <p>Aby zresetować grę, wciśnij spacje</p> 
+                </div>
+                <div id="lvlUp">
+                </div>
+                <!--snake container koniec-->
+            </div>
+            <!--snake koniec-->
+        </section> 
+        <!--sekcja kontent koniec--> 
+    </main>
+<!--main koniec-->
+<!--footer start-->
+    <footer id="Footer">
+
+    </footer>
+<!--footer koniec-->
+
+
+<script src="scripts/Snake/Game.js" type="module"></script>
+
+    
+</body>
+</html>

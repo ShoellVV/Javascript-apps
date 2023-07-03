@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kamil Ejsmont">
+    <meta name="keywords" content="javascript, aplikacje,lista ToDo">
+    <meta name="descriptions" content="Strona z listą ToDo">
+    <link rel="stylesheet" href="styles/style.css">>
+    <link rel="stylesheet" href="styles/ToDo.css">
+    <link rel="stylesheet" href="styles/Calendar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Lista ToDo</title>
+</head>
+<body>
+<!--header start-->
+   <header id="home">
+            <!--row jeden start-->
+            <div class="row">
+                <!--logo start-->
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <!--logo koniec-->
+                <!--navbar start-->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="Website.html">Strona główna</a></li>
+                        <li><a href="#Footer">Kontakt</a></li>
+                        <li><a href="../Portfolio.html">Portfolio</a></li>
+                    </ul>
+                </nav>
+                <!--navbar koniec-->
+                <div></div>
+            </div>
+            <!--row jeden koniec-->
+            <div class="row">
+                <div class="border-1"></div> 
+                <div class="border-2"></div>
+            </div>
+                
+            
+   </header>
+<!--header koniec-->
+<!--main start-->
+    <main>
+        <!--aside start-->
+        <aside id="aside-menu">
+            <!--col jeden start-->
+            <div class="col">
+                <button class="tab-button"><a href="Calculator.html">Kalkulator</a></button>
+                <button class="tab-button"><a href="Tic-tac-Toe.html">Tic-Tac-Toe</a></button>
+                <button class="tab-button"><a href="Snake.html">Snake</a></button>
+                <button class="tab-button active"><a href="ToDo.html">Lista ToDo</a></button>
+                <button class="tab-button"><a href="WeatherApp.html">Aplikacja pogody</a></button>
+            </div>
+            <!--col jeden koniec-->
+        </aside>
+        <!--aside koniec-->
+
+        <!--sekcja content start-->
+        <section class="content">
+            <!--lista ToDo start-->
+            <div id="toDo" class="tab-content wrapper">
+                <h1 class="bg-dark">Lista ToDo</h1>
+
+                <div id="toDo-container">
+                    <form id="formTask">
+                        <input 
+                        id="toDo-input" 
+                        type="text" 
+                        placeholder="Co masz zaplanowane?">
+                        <label class="calendar-label">Do</label><input class="input-calendar">
+                        <input type="submit" 
+                        id="addTask" 
+                        class="lightButton" 
+                        value="Dodaj taska">
+                    </form>
+                    <h2>Taski:</h2>
+
+                    <div id="tasks">
+                        
+                        
+                    </div>
+                </div>
+
+            </div>
+            <!--lista ToDo koniec-->
+        </section> 
+        <!--sekcja kontent koniec--> 
+    </main>
+<!--main koniec-->
+<!--footer start-->
+    <footer id="Footer">
+
+    </footer>
+<!--footer koniec-->
+
+<script src ="scripts/ToDo/ToDo.js" type="module"></script>
+<script src ="scripts/ToDo/Calendar.js" type="module"></script>
+    
+</body>
+</html>

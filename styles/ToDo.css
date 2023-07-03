@@ -1,0 +1,140 @@
+#toDo-container {
+    padding: 2rem;
+    background: white;
+    width: 120vh;
+    min-height: 60vh;
+    border: none;
+    border-radius:2rem;
+    background: #374151;
+    text-align: left;
+}
+
+#toDo-container h2{
+    margin-top: 3rem;
+    color:#9ca9ba;
+}
+
+#toDo-input, .task-element-input, .lightButton, .deleteButton, .task-element-calendar-input{
+    font-size:1.1rem;
+    font-weight: 700;
+    border: none;
+}
+
+#toDo-input, .task-element-input, .task-element-calendar-input {
+    width: 28rem;
+    height: 2.5rem;
+    outline:none;
+    border-radius: 1.3rem;
+    padding: 0.6rem;
+    background: #1f2936;
+    color: white;
+}
+
+#toDo-input::placeholder{
+    color: #6a7482;
+}
+
+#addTask{
+    width: 8rem;
+    margin-left: 2rem;
+}
+
+/* buttony */
+.lightButton, .deleteButton{
+    padding: 0.6rem;
+    width:6rem;
+    height:3rem;
+    border-radius: 1.1rem;
+    cursor:pointer;
+    color: #ff2fba;
+    transition: opacity 0.4s ease-out;
+}
+
+.lightButton{
+    color: #ff2fba;
+    background-image: linear-gradient(to right, #ff2fba, #b36dfa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.deleteButton{
+    color:rgb(255, 20, 20);
+    background:transparent;
+}
+
+.lightButton:hover, .deleteButton:hover{
+    opacity: 0.7;
+}
+
+/* taski */
+
+#tasks{
+    max-height: 40vh;
+    overflow-y: scroll;
+    /* Firefox scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: rgb(241, 3, 3) #D5DEE0;
+}
+
+.task-element{
+    display:flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    width: 90%;
+    height:3rem;
+    background: #1f2936;
+    border-radius: 1rem;
+}
+
+.task-buttons-container{
+    display:flex;
+    justify-content: center;
+}
+
+.task-buttons-container button{
+    margin-right: 0.5rem;
+}
+
+.task-element-input{
+    cursor:default;
+}
+
+.task-element-input:not(:read-only), .task-element-calendar-input:not(:read-only){
+    color:#ff2fba;
+    cursor:text;
+}
+
+/* scrollbar */
+  
+  /* Chrome, Edge and Safari */
+  #tasks::-webkit-scrollbar {
+    width: 12px;
+    width: 12px;
+  }
+  #tasks::-webkit-scrollbar-track {
+    border-radius: 6px;
+    background-color: #D5DEE0;
+  }
+  
+  #tasks::-webkit-scrollbar-track:hover {
+    background-color: #898F90;
+  }
+  
+  #tasks::-webkit-scrollbar-track:active {
+    background-color: #C2CACC;
+  }
+  
+  #tasks::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(241, 3, 3);
+  }
+  
+  #tasks::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(180, 7, 7);
+  }
+  
+  #tasks::-webkit-scrollbar-thumb:active {
+    background-color: rgb(241, 3, 3);
+  }

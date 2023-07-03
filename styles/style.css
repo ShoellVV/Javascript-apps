@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    font-family:'Playfair Display';
+    letter-spacing: 0.03rem;
+    font-weight: 500;
+}
+
+body{
+    margin:0;
+    background: url("../images/blob-scene-haikei.png") no-repeat center;
+    background-size : 100% 100%;
+}
+
+ul {
+    list-style:none;
+}
+
+a{
+    color: white;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* klasy wielokrotnego użytku */
+
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.col{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.wrapper{
+    max-width: 728px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bg-dark{
+    color:white;
+}
+
+/* header */
+#home{
+    min-height: 12vh;
+}
+
+/* logo */
+.logo{
+    margin-left: 2.2rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.logo img{
+    display:block;
+    width: 100%;
+}
+
+/* navbar */
+#nav{
+    padding-top: 1.7rem;
+    position: relative;
+}
+
+#nav ul{ 
+    display: flex;
+}
+
+#nav ul li a{
+    padding-left: 2rem;
+    font-size: 1.1rem;
+}
+
+/*border */
+.border-1{
+    display:flex;
+    flex-basis:11%;
+}
+
+.border-2{
+    display:flex;
+    flex-basis: 89%;
+    border-bottom: solid 1px white;
+    height: 1.25rem;
+}
+/* main */
+
+main{
+    display:flex;
+    min-height: 99vh;
+}
+
+#aside-menu { /* menu boczne */
+    display: flex;
+    min-height: 90vh;
+    flex-basis: 11%;
+    border-right: 1px solid white;
+}
+
+#aside-menu .col{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* buttony w menu bocznym start */
+#aside-menu button {
+    width: 160px;
+    height: 25px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: transparent;
+    transition: background 0.6s ease;
+}
+
+#aside-menu button a{
+    font-size: 1.1rem;
+}
+
+#aside-menu .col button:hover{
+    background: url("../images/btn-bg.png");
+    background-position-x: center ;
+}
+
+#aside-menu .active{
+    background: url("../images/btn-bg.png");
+    background-position-x: center ;
+}
+
+/* buttony w menu bocznym koniec */
+
+/* okno zawartości aplikacji start */
+.content{ 
+    flex-basis:89%;
+    display:flex;
+    min-height: 93vh;
+}
+
+.content .wrapper{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.content h1{
+    font-size: 2rem;
+}
+
+.content p{
+    font-size:1.2rem;
+}
+
+#toDo.wrapper {
+    margin-top: 3rem;
+    max-width: 120vh;
+}
+
+/* okno zawartości aplikacji koniec */
+
+/* footer */
+footer{
+    padding-top: 4rem;
+    min-height: 200px;
+    background: rgba(20, 20, 20, 0.9);
+}
