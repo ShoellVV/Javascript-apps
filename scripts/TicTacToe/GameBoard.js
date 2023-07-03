@@ -36,7 +36,7 @@ export class GameBoard {
 
     //schowanie panelu informacyjnego
     hidePanel = () => {
-        this.info.className += " hide";
+        this.info.classList.add("hide");
     }
 
     // działania dla buttonów na click
@@ -57,7 +57,7 @@ export class GameBoard {
         this.fieldsElements.forEach(field => {
             field.classList.remove('game__item--X','game__item--O')
         })
-        this.info.className -= " hide";
+        this.info.classList.remove("hide");
     };
 
     // metoda zbierająca pozycję kliknięcia w pole
